@@ -158,7 +158,7 @@ func (cw *chunkedWriter) Write(data []byte) (n int, err error) {
 }
 
 func (cw *chunkedWriter) Close() error {
-	_, err := io.WriteString(cw.Wire, "0\r\n")
+	_, err := io.WriteString(cw.Wire, "0\r\n11111")
 	return err
 }
 
